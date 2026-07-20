@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cratejoy.com/reference/authorization
+docs: https://docs.cratejoy.com/reference/authorization
+summary:
+  types: [http]
+  http_schemes: [basic]
+  api_key_in: []
+  oauth2_flows: []
+schemes:
+  - name: basicAuth
+    type: http
+    scheme: basic
+    description: >-
+      The Cratejoy Merchant API uses HTTP Basic authentication. You Base64-encode
+      your API credentials as `client_id:client_secret` and pass them in the
+      Authorization header (Authorization: Basic {base64(client_id:client_secret)}).
+    credentials:
+      - Client ID
+      - Client Secret Key
+    obtain: >-
+      Admin users generate API keys from the merchant dashboard under Settings > API.
+      Non-admin roles (Customer Support, Developers) cannot access this panel and must
+      request key generation from a store administrator.
+    applies_to: Merchant API (https://api.cratejoy.com/v1/)
+    sources: [docs.cratejoy.com/reference/authorization]
+notes: >-
+  The Store API is a separate surface that reads (and sometimes writes) data on behalf
+  of the logged-in customer from front-end JavaScript, rather than using Basic API
+  credentials. No OAuth2/OIDC surface is documented.
