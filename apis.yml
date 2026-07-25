@@ -1,8 +1,27 @@
 aid: cratejoy
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cratejoy.png
 name: Cratejoy
-description: 'Cratejoy is a company surfaced as a portfolio company of crv, y-combinator and added to
-  the API Evangelist network as a stub for enrichment. Sector: ecommerce. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Cratejoy is a subscription-box commerce platform and marketplace (a CRV and Y
+  Combinator company) that lets independent creators launch, sell, and manage recurring
+  subscription boxes and one-time products. It exposes two public REST APIs: a Merchant
+  API (https://api.cratejoy.com/v1/) covering customers, orders, subscriptions,
+  shipments, products, inventory, carts, transactions, and webhooks; and a front-end
+  Store API for reading and writing customer-scoped data from a storefront theme.
+  Resources are JSON, authenticated with HTTP Basic credentials, paginated, filterable
+  with double-underscore operators, and rate-limited with Retry-After.
 url: https://raw.githubusercontent.com/api-evangelist/cratejoy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,11 +32,53 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Ecommerce
-apis: []
+- Subscriptions
+- Subscription Boxes
+- Marketplace
+- Payments
+- Orders
+- Webhooks
+- REST
+apis:
+- name: Cratejoy Merchant API
+  description: >-
+    REST interface into most of the data and functionality of interest to Cratejoy
+    merchants and developers: customers, orders, subscriptions, shipments, products,
+    inventory, carts, transactions, addresses, stores, and webhooks. JSON throughout,
+    HTTP Basic auth, page-number pagination, double-underscore filtering, 429 Retry-After.
+  humanURL: https://docs.cratejoy.com/reference/introduction-1
+  baseURL: https://api.cratejoy.com/v1/
+  properties:
+  - type: Documentation
+    url: https://docs.cratejoy.com/reference/introduction-1
+  - type: APIReference
+    url: https://docs.cratejoy.com/reference/authorization
+  - type: Authentication
+    url: authentication/cratejoy-authentication.yml
+  - type: Conventions
+    url: conventions/cratejoy-conventions.yml
+  - type: ErrorCatalog
+    url: errors/cratejoy-problem-types.yml
+  - type: Webhooks
+    url: asyncapi/cratejoy-webhooks.yml
+  - type: DataModel
+    url: data-model/cratejoy-data-model.yml
+  - type: MCPServer
+    url: mcp/cratejoy-mcp.yml
+- name: Cratejoy Store API
+  description: >-
+    Front-end API that lets storefront JavaScript read (and sometimes write) data on
+    behalf of the logged-in customer: customer, product, subscription, shipment,
+    address, and survey methods, plus add-to-cart URLs.
+  humanURL: https://docs.cratejoy.com/reference/introduction
+  baseURL: https://api.cratejoy.com/v1/
+  properties:
+  - type: Documentation
+    url: https://docs.cratejoy.com/reference/introduction
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -26,3 +87,54 @@ maintainers:
 common:
 - type: Website
   url: https://www.cratejoy.com/
+- type: DeveloperPortal
+  url: https://docs.cratejoy.com/
+- type: Documentation
+  url: https://docs.cratejoy.com/
+- type: APIReference
+  url: https://docs.cratejoy.com/reference/introduction-1
+- type: GettingStarted
+  url: https://docs.cratejoy.com/reference/quick-start-add-a-tracking-number-to-a-shipment
+- type: Support
+  url: https://www.cratejoy.com/pages/contact
+- type: Blog
+  url: https://www.cratejoy.com/blogs/box-insider
+- type: GitHubOrganization
+  url: https://github.com/cratejoy
+- type: Pricing
+  url: https://sell.cratejoy.com/pricing
+- type: SignUp
+  url: https://sell.cratejoy.com/
+- type: TermsOfService
+  url: https://www.cratejoy.com/pages/terms
+- type: PrivacyPolicy
+  url: https://www.cratejoy.com/pages/privacy
+- type: StatusPage
+  url: https://status.cratejoy.com
+- type: LLMsTxt
+  url: llms/cratejoy-llms.txt
+- type: Authentication
+  url: authentication/cratejoy-authentication.yml
+- type: Conventions
+  url: conventions/cratejoy-conventions.yml
+- type: ErrorCatalog
+  url: errors/cratejoy-problem-types.yml
+- type: Webhooks
+  url: asyncapi/cratejoy-webhooks.yml
+- type: Lifecycle
+  url: lifecycle/cratejoy-lifecycle.yml
+- type: Packages
+  url: packages/cratejoy-packages.yml
+- type: MCPServer
+  url: mcp/cratejoy-mcp.yml
+- type: Conformance
+  url: conformance/cratejoy-conformance.yml
+- type: DataModel
+  url: data-model/cratejoy-data-model.yml
+- type: DomainSecurity
+  url: security/cratejoy-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

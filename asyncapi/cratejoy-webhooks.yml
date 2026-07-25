@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cratejoy.com/reference/web-hook-methods
+type: Webhooks
+docs: https://docs.cratejoy.com/reference/web-hook-methods
+registration:
+  endpoint: https://api.cratejoy.com/v1/hooks/
+  method: POST
+  required_fields: [name, target, request_type, event]
+management:
+  - {method: GET, path: https://api.cratejoy.com/v1/hooks/, description: List all webhooks}
+  - {method: POST, path: https://api.cratejoy.com/v1/hooks/, description: Create a new webhook}
+  - {method: PUT, path: 'https://api.cratejoy.com/v1/hooks/{hook_id}/', description: Update an existing webhook}
+  - {method: DELETE, path: 'https://api.cratejoy.com/v1/hooks/{hook_id}/', description: Delete a webhook}
+hook_object:
+  fields: [id, name, target, event, request_type, enabled, created_at, store_id, querystring, type, url]
+events:
+  - name: customer_new
+    description: Triggered when a new customer is created.
+events_note: >-
+  The docs document customer_new as an example event; the full event list is defined
+  per the Web Hook object reference (https://docs.cratejoy.com/reference/hook). Not
+  enumerated here to avoid fabrication.
+signing:
+  documented: false
+  note: No webhook signing/verification scheme is documented in the public reference.

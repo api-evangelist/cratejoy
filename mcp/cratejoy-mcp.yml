@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: derived
+status: candidate
+source: https://docs.cratejoy.com/reference/introduction-1
+note: >-
+  No official hosted/remote MCP server is published by Cratejoy. This is a candidate tool
+  list derived from the documented Merchant API REST resources (no OpenAPI operationIds
+  exist to bind to). base_url https://api.cratejoy.com/v1/, HTTP Basic auth.
+server:
+  name: cratejoy
+  transport: http
+tools:
+  - {name: list_customers, description: List customers, source: 'GET /v1/customers/'}
+  - {name: get_customer, description: Retrieve a customer, source: 'GET /v1/customers/{id}/'}
+  - {name: list_orders, description: List orders, source: 'GET /v1/orders/'}
+  - {name: get_order, description: Retrieve an order, source: 'GET /v1/orders/{id}/'}
+  - {name: list_subscriptions, description: List subscriptions, source: 'GET /v1/subscriptions/'}
+  - {name: get_subscription, description: Retrieve a subscription, source: 'GET /v1/subscriptions/{id}/'}
+  - {name: list_shipments, description: List shipments, source: 'GET /v1/shipments/'}
+  - {name: get_shipment, description: Retrieve a shipment, source: 'GET /v1/shipments/{id}/'}
+  - {name: add_shipment_tracking, description: Add a tracking number to a shipment, source: 'PUT /v1/shipments/{id}/'}
+  - {name: list_products, description: List products, source: 'GET /v1/products/'}
+  - {name: get_product, description: Retrieve a product, source: 'GET /v1/products/{id}/'}
+  - {name: list_transactions, description: List transactions, source: 'GET /v1/transactions/'}
+  - {name: list_carts, description: List carts, source: 'GET /v1/carts/'}
+  - {name: list_webhooks, description: List registered webhooks, source: 'GET /v1/hooks/'}
+  - {name: create_webhook, description: Register a webhook, source: 'POST /v1/hooks/'}

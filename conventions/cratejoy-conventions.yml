@@ -1,0 +1,69 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cratejoy.com/reference/introduction2
+docs:
+  - https://docs.cratejoy.com/reference/introduction2
+  - https://docs.cratejoy.com/reference/collections2
+  - https://docs.cratejoy.com/reference/filtering-and-searching2
+  - https://docs.cratejoy.com/reference/working-with-object-relationships
+api: Cratejoy Merchant API
+base_url: https://api.cratejoy.com/v1/
+authentication:
+  style: http-basic
+  detail: Base64-encoded client_id:client_secret in the Authorization header.
+  ref: authentication/cratejoy-authentication.yml
+content_type:
+  request: application/json
+  response: application/json
+  encoding: UTF-8
+  accept_header: application/json
+pagination:
+  style: page-number
+  params:
+    - name: page
+      description: Page number (e.g. limit=10&page=3 returns items 31-40).
+    - name: limit
+      description: Maximum number of results per page.
+  response_fields:
+    - name: count
+      description: Total number of matched results.
+    - name: results
+      description: Array of the current page's results.
+    - name: next
+      description: Argument to attach to the URL to retrieve the next page.
+    - name: prev
+      description: Argument to attach to the URL to retrieve the previous page.
+filtering:
+  style: double-underscore-operators
+  pattern: '[relation.]property[__comparison]=value'
+  operators: [eq, ne, lt, le, gt, ge, like, ilike, in, nin, is_null]
+  wildcard: '%'
+  related_filtering: first-level relationships only (e.g. customer.name__like=% Smith)
+  examples:
+    - 'ship_weight__gt=1.0&ship_weight__lt=2.0'
+    - 'sku__like=SQ700%'
+    - 'customer.name__like=% Smith'
+relationships:
+  detail: >-
+    Related objects are traversed via relationship fields; first-level relations can be
+    used in filters. See working-with-object-relationships and the relation map.
+  ref: data-model/cratejoy-data-model.yml
+idempotency:
+  supported: false
+  detail: No idempotency-key header or idempotent-retry contract is documented.
+versioning:
+  scheme: uri-path
+  current: v1
+  detail: Resources are served under /v1/{objects}/.
+  ref: lifecycle/cratejoy-lifecycle.yml
+error_envelope:
+  format: json
+  detail: >-
+    Errors are returned as JSON with standard HTTP status codes (400, 403, 404, 405,
+    429, 500, 503). Not RFC 9457 problem+json.
+  ref: errors/cratejoy-problem-types.yml
+rate_limiting:
+  signal: Retry-After header
+  detail: A 429 Too Many Requests response includes a Retry-After header (seconds until retry).
+webhooks:
+  ref: asyncapi/cratejoy-webhooks.yml

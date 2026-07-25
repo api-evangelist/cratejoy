@@ -1,0 +1,52 @@
+generated: '2026-07-18'
+method: derived
+source: https://docs.cratejoy.com/reference/relation-map
+docs:
+  - https://docs.cratejoy.com/reference/relation-map
+  - https://docs.cratejoy.com/reference/customers-to-orders-subs-shipments
+note: >-
+  Derived from the documented Merchant API object reference and the customers-to-orders-
+  subscriptions-shipments relationship guide. The full relation map is published as an
+  image; only relationships the text documentation supports are asserted here.
+entities:
+  - name: Customer
+    ref: https://docs.cratejoy.com/reference/customer-1
+  - name: Order
+    ref: https://docs.cratejoy.com/reference/order
+  - name: Subscription
+    ref: https://docs.cratejoy.com/reference/subscription
+  - name: Shipment
+    ref: https://docs.cratejoy.com/reference/shipment
+  - name: Transaction
+    ref: https://docs.cratejoy.com/reference/transaction
+  - name: Product
+    ref: https://docs.cratejoy.com/reference/product
+  - name: ProductInstance
+    ref: https://docs.cratejoy.com/reference/product-instances
+  - name: Cart
+    ref: https://docs.cratejoy.com/reference/cart
+  - name: CartProduct
+    ref: https://docs.cratejoy.com/reference/cart-products
+  - name: CustomerAddress
+    ref: https://docs.cratejoy.com/reference/customeraddress
+  - name: SubscriptionTerm
+    ref: https://docs.cratejoy.com/reference/subscription-term
+  - name: Store
+    ref: https://docs.cratejoy.com/reference/store-metadata
+  - name: WebHook
+    ref: https://docs.cratejoy.com/reference/hook
+relationships:
+  - {from: Customer, type: has_many, to: Order}
+  - {from: Customer, type: has_many, to: Subscription}
+  - {from: Customer, type: has_many, to: Shipment}
+  - {from: Customer, type: has_many, to: CustomerAddress}
+  - {from: Order, type: belongs_to, to: Customer, via: customer}
+  - {from: Subscription, type: belongs_to, to: Customer, via: customer}
+  - {from: Subscription, type: has_many, to: Shipment}
+  - {from: Subscription, type: has_one, to: SubscriptionTerm}
+  - {from: Shipment, type: belongs_to, to: Subscription}
+  - {from: Order, type: has_many, to: Transaction}
+  - {from: Cart, type: has_many, to: CartProduct}
+  - {from: CartProduct, type: belongs_to, to: Product, via: product}
+  - {from: Product, type: has_many, to: ProductInstance}
+render: https://docs.cratejoy.com/reference/relation-map

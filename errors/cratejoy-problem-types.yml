@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.cratejoy.com/reference/introduction2
+format: json
+envelope: JSON body with a standard HTTP status code (not RFC 9457 problem+json).
+problems:
+  - status: 400
+    title: Bad Request
+    meaning: The request was malformed or contained invalid parameters.
+  - status: 403
+    title: Forbidden
+    meaning: Authentication failed or the credentials lack permission for the resource.
+  - status: 404
+    title: Not Found
+    meaning: The requested resource does not exist.
+  - status: 405
+    title: Method Not Allowed
+    meaning: The HTTP method is not supported on this resource.
+  - status: 429
+    title: Too Many Requests
+    meaning: Rate limit exceeded. A Retry-After header indicates seconds until retry is permitted.
+    remediation: Honor the Retry-After header before retrying.
+  - status: 500
+    title: Internal Server Error
+    meaning: An unexpected error occurred on the Cratejoy server.
+  - status: 503
+    title: Service Unavailable
+    meaning: The service is temporarily unavailable.
+success_codes:
+  - {status: 200, title: OK, methods: [GET, PUT, PATCH]}
+  - {status: 201, title: Created, methods: [POST]}
+  - {status: 204, title: No Content, methods: [DELETE]}

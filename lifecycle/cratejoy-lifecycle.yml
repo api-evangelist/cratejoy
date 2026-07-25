@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://status.cratejoy.com
+versioning:
+  scheme: uri-path
+  current: v1
+  detail: Resources are served under https://api.cratejoy.com/v1/{objects}/.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No formal deprecation policy or RFC 8594 Sunset/Deprecation header support is documented.
+sla:
+  url: null
+  uptime_target: null
+status_page:
+  url: https://status.cratejoy.com
+  provider: Atlassian Statuspage
+  components: [Storefront, Merchant Portal, Marketplace, API]
+  dependencies: [EasyPost, Mailgun, AWS (CloudFront, EC2, ElastiCache, ELB, RDS), Filestack, Stripe, Braintree, Spreedly]
+  rss: https://status.cratejoy.com/history.rss
+  atom: https://status.cratejoy.com/history.atom
+deprecated_operations: []

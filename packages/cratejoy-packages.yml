@@ -1,0 +1,16 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/cratejoy/api_examples
+note: >-
+  No first-party installable client library (SDK) is published to npm, PyPI, RubyGems,
+  Packagist, NuGet, Go modules, or crates.io. Cratejoy publishes first-party example
+  code (not a packaged SDK) in the cratejoy/api_examples GitHub repo. No SDKs pointer is
+  emitted because there is no installable client library.
+packages:
+  - language: python
+    registry: github
+    name: cratejoy/api_examples
+    url: https://github.com/cratejoy/api_examples
+    kind: example-code
+    official: true
+    description: Example utilities and notebooks demonstrating use of the Cratejoy API.

@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: derived
+source: https://docs.cratejoy.com/reference/introduction2
+standards:
+  - id: http-basic-auth
+    conforms: true
+    evidence: Merchant API authenticates via HTTP Basic (RFC 7617) with client_id:client_secret.
+  - id: pagination
+    conforms: true
+    evidence: Collection endpoints return count/results/next/prev paged responses.
+  - id: rate-limit-retry-after
+    conforms: true
+    evidence: 429 responses include a Retry-After header (RFC 6585 / RFC 9110).
+  - id: json-representations
+    conforms: true
+    evidence: JSON request/response bodies throughout, UTF-8.
+  - id: oauth2
+    conforms: false
+  - id: oidc
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors are plain JSON + HTTP status codes, not application/problem+json.
+  - id: rfc8594-sunset
+    conforms: false
+  - id: json-api
+    conforms: false
+  - id: fhir
+    conforms: false
+  - id: scim
+    conforms: false
+compliance_program:
+  published: false
+  note: No public trust center or named certifications (SOC 2, ISO 27001, PCI, HIPAA) found. No Compliance pointer emitted.

@@ -1,0 +1,81 @@
+# cratejoy Documentation
+
+> Cratejoy developer documentation.
+
+## API Reference
+- [Introduction](https://docs.cratejoy.com/reference/introduction2.md)
+- [Collections](https://docs.cratejoy.com/reference/collections2.md)
+- [Filtering and Searching](https://docs.cratejoy.com/reference/filtering-and-searching2.md)
+- [Working with Object Relationships](https://docs.cratejoy.com/reference/working-with-object-relationships.md)
+- [Relation Map](https://docs.cratejoy.com/reference/relation-map.md)
+- [Theme Structure](https://docs.cratejoy.com/reference/getting-started.md): This document describes the overall file structure of a Cratejoy theme
+- [Theme Technologies](https://docs.cratejoy.com/reference/technologies-involved.md)
+- [Subscribe Flow](https://docs.cratejoy.com/reference/subscribe-flow.md)
+- [Theme Helpers](https://docs.cratejoy.com/reference/theme-files.md): Helper macros are defined by the Cratejoy platform
+- [Customer Pages](https://docs.cratejoy.com/reference/customer-pages.md): Customer pages handle all the customer account related functionality
+- [Example Themes](https://docs.cratejoy.com/reference/example-themes.md)
+- [Introduction to Theme Logic](https://docs.cratejoy.com/reference/introduction-to-jinja.md)
+- [Filters](https://docs.cratejoy.com/reference/filters.md)
+- [Page Variables](https://docs.cratejoy.com/reference/page-variables.md)
+- [Page Variable Types](https://docs.cratejoy.com/reference/store-object-types.md): These are the types of objects that can be referenced from your theme pages.
+- [Components](https://docs.cratejoy.com/reference/components.md)
+- [Components in Depth](https://docs.cratejoy.com/reference/components-details.md)
+- [Theme Component Settings](https://docs.cratejoy.com/reference/settings.md)
+- [Settings in Depth](https://docs.cratejoy.com/reference/settings-details.md)
+- [Adding a Custom Component](https://docs.cratejoy.com/reference/adding-a-custom-component-1.md)
+- [Introduction](https://docs.cratejoy.com/reference/introduction.md): Getting started with the Cratejoy Store API
+- [Add-to-cart URLs](https://docs.cratejoy.com/reference/add-to-cart-urls.md)
+- [Customer Methods](https://docs.cratejoy.com/reference/customer-metadata-3.md)
+- [ECom Inventory Methods](https://docs.cratejoy.com/reference/product-inventory-ecom-1.md): Inventory data object specification for the Cratejoy Merchant API
+- [Subscription Methods](https://docs.cratejoy.com/reference/subscription-metadata-methods.md)
+- [Product Methods](https://docs.cratejoy.com/reference/product-methods-1.md)
+- [Shipment Methods](https://docs.cratejoy.com/reference/shipment-methods.md)
+- [Address Methods](https://docs.cratejoy.com/reference/address-methods.md)
+- [Survey Methods](https://docs.cratejoy.com/reference/survey-methods.md)
+- [Introduction](https://docs.cratejoy.com/reference/introduction-1.md)
+- [Authorization](https://docs.cratejoy.com/reference/authorization.md)
+- [Add Tracking to a Shipment](https://docs.cratejoy.com/reference/quick-start-add-a-tracking-number-to-a-shipment.md)
+- [Customers to Orders, Subscriptions](https://docs.cratejoy.com/reference/customers-to-orders-subs-shipments.md)
+- [Address Methods](https://docs.cratejoy.com/reference/customer-address-methods.md): Customer Address data object specification for the Cratejoy Merchant API
+- [Cart Methods](https://docs.cratejoy.com/reference/cart-methods.md)
+- [Customer Methods](https://docs.cratejoy.com/reference/methods-customer.md)
+- [Instance & Inventory Methods](https://docs.cratejoy.com/reference/inventory-methods.md): Inventory data object specification for the Cratejoy Merchant API
+- [Order Methods](https://docs.cratejoy.com/reference/order-methods.md): Order methods supported on the Merchant API
+- [Page Redirect Methods](https://docs.cratejoy.com/reference/page-redirect-methods.md)
+- [Product Methods](https://docs.cratejoy.com/reference/product-methods.md)
+- [Product Survey Methods](https://docs.cratejoy.com/reference/product-survey-methods.md)
+- [Shipment Methods](https://docs.cratejoy.com/reference/shipment-methods-1.md): Shipment methods for the Cratejoy Merchant API
+- [Shipment Batch Methods](https://docs.cratejoy.com/reference/shipment-batch-methods.md)
+- [Store Methods](https://docs.cratejoy.com/reference/store-methods.md)
+- [Subscription Methods](https://docs.cratejoy.com/reference/subscription-methods.md)
+- [Transaction Methods](https://docs.cratejoy.com/reference/transaction-methods.md)
+- [Web Hook Methods](https://docs.cratejoy.com/reference/web-hook-methods.md)
+- [Address](https://docs.cratejoy.com/reference/customeraddress.md): Address data object specification
+- [Cart](https://docs.cratejoy.com/reference/cart.md): Cart data object specification for the Cratejoy Merchant API
+- [Customer](https://docs.cratejoy.com/reference/customer-1.md): Customer data object specification for the Cratejoy Merchant API
+- [Inventory](https://docs.cratejoy.com/reference/inventory.md): Inventory data object specification for the Cratejoy Merchant API
+- [Order](https://docs.cratejoy.com/reference/order.md): Order data object specification for the Cratejoy Merchant API
+- [Page Redirect](https://docs.cratejoy.com/reference/page-redirect.md)
+- [Product](https://docs.cratejoy.com/reference/product.md): Product data object specification for the Cratejoy Merchant API
+- [Product Instances](https://docs.cratejoy.com/reference/product-instances.md)
+- [Product Survey Results](https://docs.cratejoy.com/reference/product-survey-results.md): Product survey results data object specification for the Cratejoy Merchant API
+- [Shipment](https://docs.cratejoy.com/reference/shipment.md): Shipment data object
+- [Shipment Batch](https://docs.cratejoy.com/reference/shipment-batches.md): Shipment data object
+- [Subscription](https://docs.cratejoy.com/reference/subscription.md): Subscription data object specification for the Cratejoy Merchant API
+- [Transaction](https://docs.cratejoy.com/reference/transaction.md): Transaction data object specification for the Cratejoy Merchant API
+- [Web Hook](https://docs.cratejoy.com/reference/hook.md)
+- [Cart Coupon](https://docs.cratejoy.com/reference/cart-coupon.md): Cart Coupon object specification for the Cratejoy Merchant API
+- [Cart Metadata](https://docs.cratejoy.com/reference/cart-metadata.md): Cart Metadata object specification for the Cratejoy Merchant API
+- [Cart Products](https://docs.cratejoy.com/reference/cart-products.md): Cart_product data object for the Cratejoy Merchant API
+- [Customer Metadata](https://docs.cratejoy.com/reference/customer-metadata.md): Customer data object specification for the Cratejoy Merchant API
+- [Fulfillment](https://docs.cratejoy.com/reference/fulfillment.md): Fulfillment data object specification for the Cratejoy Merchant API
+- [Metadata](https://docs.cratejoy.com/reference/metadata.md)
+- [Product Billing](https://docs.cratejoy.com/reference/product-billing.md): Product billing data object specification for the Merchant API
+- [Shipment Metadata](https://docs.cratejoy.com/reference/shipment-metadata.md): Shipment Metadata object specification for the Cratejoy Merchant API
+- [Shipping Label](https://docs.cratejoy.com/reference/shippinglabel.md): ShipmentLabel data object specification for the Cratejoy Merchant API.
+- [Store Metadata](https://docs.cratejoy.com/reference/store-metadata.md): Store Metadata object specification for the Cratejoy Merchant API
+- [Subscription Coupons](https://docs.cratejoy.com/reference/subscription-coupons.md): Details on listing, applying, and removing subscription coupons
+- [Subscription Gift Info](https://docs.cratejoy.com/reference/subscription-gift-info.md)
+- [Subscription Metadata](https://docs.cratejoy.com/reference/subscription-metadata-3.md): Subscription Metadata object specification for the Cratejoy Merchant API
+- [Subscription Term](https://docs.cratejoy.com/reference/subscription-term.md): Subscription term data object specification for the Cratejoy Merchant API
+- [Shipment Stats](https://docs.cratejoy.com/reference/shipment-stats.md): Shipment Stats object specification for the Cratejoy Merchant API
