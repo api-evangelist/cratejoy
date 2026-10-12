@@ -1,0 +1,22 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/cratejoy/integrations
+checked:
+- https://composio.dev/toolkits/cratejoy
+- https://monid.ai/tools/cratejoy
+- https://n8n.io/integrations/cratejoy/
+- https://zapier.com/apps/cratejoy/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: cratejoy
+  url: https://zapier.com/apps/cratejoy/integrations
+  external_url: https://www.cratejoy.com/
+  partner_tier: null
+  triggers: []
+  actions: []
+  searches: []
+edges: []
+templates: []
