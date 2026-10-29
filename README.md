@@ -64,6 +64,108 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cratejoy is a company surfaced as a portfolio company of crv, y-combinator and added to the API Evangelist network as a stub for enrichment. Sector: ecommerce. This profile is a lead awaiting the enrichment pipeline.
+Cratejoy is a subscription-box commerce platform and marketplace (a CRV and Y Combinator company) that lets independent creators launch, sell, and manage recurring subscription boxes and one-time products. It exposes two public REST APIs: a Merchant API (https://api.cratejoy.com/v1/) covering customers, orders, subscriptions, shipments, products, inventory, carts, transactions, and webhooks; and a front-end Store API for reading and writing customer-scoped data from a storefront theme. Resources are JSON, authenticated with HTTP Basic credentials, paginated, filterable with double-underscore operators, and rate-limited with Retry-After.
 
-Backed by: crv, y-combinator — https://www.cratejoy.com/
+**Areas:** Company · E-Commerce · Subscription · Subscription Boxes · Marketplace · Payments · Order · Webhook · REST
+
+## Cratejoy on APIs.io
+
+Everything profiled for Cratejoy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cratejoy/](https://apis.io/providers/cratejoy/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Cratejoy Merchant API](https://apis.io/apis/cratejoy/cratejoy-merchant-api/) — REST interface into most of the data and functionality of interest to Cratejoy merchants and developers: customers, orders, subscriptions, shipments,…
+- [Cratejoy Store API](https://apis.io/apis/cratejoy/cratejoy-store-api/) — Front-end API that lets storefront JavaScript read (and sometimes write) data on behalf of the logged-in customer: customer, product, subscription,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Cratejoy Webhooks](https://apis.io/asyncapis/cratejoy/cratejoy-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [cratejoy](https://apis.io/servers/cratejoy/cratejoy/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cratejoy Authentication](https://apis.io/security/cratejoy/cratejoy-authentication/)
+- [Cratejoy Domain Security](https://apis.io/security/cratejoy/cratejoy-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.cratejoy.com/)
+- [Documentation](https://docs.cratejoy.com/)
+- [Getting started](https://docs.cratejoy.com/reference/quick-start-add-a-tracking-number-to-a-shipment)
+- [API reference](https://docs.cratejoy.com/reference/introduction-1)
+- [Pricing](https://sell.cratejoy.com/pricing)
+- [Sign up](https://sell.cratejoy.com/)
+- [Support](https://www.cratejoy.com/pages/contact)
+- [Blog](https://www.cratejoy.com/blogs/box-insider)
+- [Terms of service](https://www.cratejoy.com/pages/terms)
+- [Privacy policy](https://www.cratejoy.com/pages/privacy)
+- [GitHub](https://github.com/cratejoy)
+- [Status](https://status.cratejoy.com)
+
+## API Evangelist rating
+
+**Kin Score 38.0** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 44.7 |
+
+**Agent readiness 22.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.3** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cratejoy/](https://apis.io/providers/cratejoy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cratejoy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cratejoy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
